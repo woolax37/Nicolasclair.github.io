@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet" />
+  <title>NicolasClair</title>
+</head>
+
+<body>
+
+  <!-- **************header***************-->
+
+  <header id="header">
+    <a href="#" class="logo">NicolasClair<span>.</span></a>
+    <nav class="nav-bar">
+      <ul>
+        <li><a href="#accueil" onclick="toggle()">Accueil</a></li>
+        <li><a href="#formation" onclick="toggle()">Formation</a></li>
+        <li><a href="#projet" onclick="toggle()">Portfolio</a></li>
+        <li><a href="#contact" onclick="toggle()">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="toggle" onclick="toggle()"></div>
+
+    <!-- **************Section dark mode/ light mode***************-->
+    <div class="switch">
+      <i id="icone" class="fas fa-moon"></i>
+      <div class="btn"></div>
+    </div>
+    <!-- **************Section dark mode/ light mode***************-->
+
+  </header>
+
+
+
+  <!-- **************Section home***************-->
+
+
+  <section id="accueil">
+    <div>
+      <h2>A propos de moi</h2>
+      <p>
+        Salut moi c'est Nico, j'ai 27 ans et je suis actuellement à la recherche d'une entreprise pouvant me former en
+        contrat d'alternance au metier de développeur web et web mobile.</p>
+      <br />
+      <p>J'ai commencé à coder en html,css et JavaScript au printemps 2022 et j'ai tout de
+        suite accroché!</p>
+      <p>De nature curieux j'ai voulu en apprendre davantage sur
+        l'univers du développement web.</p> <br />
+      <p>J'ai donc recherché une école qui pourrait me former et m'accompagner
+        dans ma reconversion et j'ai rapidement entendu parler du Cefim.</p>
+      <br>
+      <p> J'ai passé dans un premier temps les tests en ligne du parcours
+        d'intégration pour ensuite être retenu pour la semaine de sélection.</p>
+      <br>
+      <p> Cette semaine m'a permis, en plus de valider mes acquis, de m'assurer
+        que c'etait bel et bien la formation qui me permettrait d'atteindre mes ambitions professionnelles.</p>
+
+      <a href="Nicolas_clair_cv.pdf" download="Nicolas_clair_cv.pdf" class="button">Télécharger mon cv</a>
+    </div>
+    <img src="codage Nico/images/nicogif.GIF" alt="Nico" />
+  </section>
+
+  <!-- **************Section home***************-->
+
+  <section id="formation">
+    <div>
+      <h2>Ma formation au CEFIM</h2>
+
+      <br />
+      <p>
+        La formation Développeur Web et Web Mobile (en alternance) est une
+        formation professionnelle qualifiante (niveau III : Bac+2) d'une durée
+        de 51 semaines (21 semaines de cours et 30 semaines en entreprise).
+        <p>Cette formation commencera le 26 septembre 2022.</p>
+
+
+        <br />
+        <p>
+          Durant cette formation les compétences abordées seront : HTML, CSS,
+          BootStrap, SASS, JavaScript, React, WordPress, Bases de données,
+          MySQL, PHP, Laravel.
+        </p>
+        <br />
+        <br />
+        <br />
+        <p>
+          Voici une liste non-exhaustive des missions que je pourrais réaliser
+          en entreprise:
+        </p>
+        <br />
+
+
+        <ul>
+          <li>Intégration de maquettes</li>
+          <li>site web statique et/ou site web dynamique</li>
+          <li>Création de thèmes WordPress</li>
+          <li>Développement de web app</li>
+          <li>Conception de base de données</li>
+          <li>Développement PHP/MySQL</li>
+          <li>Intégration ou développement de web service</li>
+          <li>Adapter des plugins sur CMS</li>
+          <li>Debugger un programme</li>
+          <li>Développement d’API REST</li>
+        </ul>
+
+        <a href="https://www.cefim.eu/formations/formation-developpeur-web-alternance/" target="blank" class="button">
+          En savoir +</a>
+    </div>
+
+    <img class="cefim" src="/codage Nico/images/cefimlogo.png" alt="Cefim" />
+  </section>
+
+  <section id="projet">
+    <div>
+      <h2>Portfolio</h2>
+      <p>
+        Je vous présente deux des projets que j'ai réalisés pendant la semaine
+        de sélection.
+      </p>
+      <br />
+      <p>
+        Le premier est une page statique responsive réalisée grâce à une
+        maquette.
+      </p>
+      <br />
+      <p>
+        Le deuxième est un jeu de dés en JavaScript où le joueur à 3 chances
+        pour trouver le bon chiffre et remporter la partie.
+      </p>
+      <br />
+      <p>
+        Ces projets seront tout comme mon site amenés à évoluer au fur et à mesure de mon apprentissage, ils seront mis
+        à jour régulièrement.
+      </p>
+    </div>
+
+    <a href="/codage Nico/maquette-cefim/maquette.html" target="blank"><img src="/codage Nico/images/maquettecefim.PNG"
+        width="350" alt="maquettesite" /></a>
+    <a href="/codage Nico/jeu-dede/jeu-dé.html" target="blank"><img src="/codage Nico/images/jeudé.PNG" width="350"
+        alt="maquettejeudédé" /></a>
+  </section>
+
+  <section id="contact">
+    <div>
+      <h2>Contact</h2>
+
+      <a href="https://www.linkedin.com/in/nicolas-clair-a13926158/" target="blank" class="button">Linkedin</a>
+      <a href="mailto:nicolas.clair37@hotmail.fr" class="button">Mail</a>
+      <a href="tel:+33659688820" class="button">Tel</a>
+    </div>
+  </section>
+
+  <footer>2022 Nicolas Clair - Tous droits réservés</footer>
+
+  <script src="java.js"></script>
+</body>
+
+</html>

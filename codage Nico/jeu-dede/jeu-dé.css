@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+  font-family: "Ranchers", sans-serif;
+  line-height: 1.8;
+  background-color: #20cca64d;
+}
+
+.wrapper {
+  width: 50%;
+  margin: 0 auto;
+
+  text-align: center;
+}
+
+/* ****section header**** */
+
+header,
+.merci {
+  background-color: #c52253e6;
+}
+
+h1 {
+  padding-top: 20px;
+  padding-bottom: 0px;
+  font-family: "Ranchers", sans-serif;
+  font-size: 50px;
+  color: rgba(103, 44, 164, 0.9);
+  text-transform: uppercase;
+}
+
+img {
+  padding-top: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+}
+
+/* **** regles bgcolor a l'interieur de mon wrapper pour mes background color**** */
+
+.bgcolor {
+  background-color: #c52253e6;
+}
+
+/* **** regles + paraggraphe **** */
+.regle {
+  margin-top: 30px;
+}
+
+p {
+  font-size: 30px;
+  color: white;
+}
+
+/* **** style du bouton de saisie **** */
+
+input[type="number"] {
+  width: 1%;
+  background-color: rgba(151, 239, 255, 0.8);
+  background-image: url("icons8-dé-48.png");
+  background-repeat: no-repeat;
+  background-position: 17px 17px;
+  text-align: center;
+  border: 1px solid #c52253e6;
+  color: black;
+  border-radius: 60px;
+  font-size: 30px;
+  padding: 20px 40px;
+  margin: 8px 0;
+  transition: width 0.4s ease-in-out;
+  appearance: none;
+  -moz-appearance: textfield;
+}
+
+input[type="number"]:focus {
+  width: 100%;
+  outline-style: none;
+}
+
+/* **** style du bouton go **** */
+
+input[type="button"] {
+  background-color: #4caf50;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.bouton-rejouer {
+  visibility: hidden;
+}
+
+.resultat {
+  color: white;
+  font-size: 30px;
+}
+
+.rejouer {
+  margin-bottom: 30px;
+}
+
+.merci {
+  position: relative;
+}

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>dédé le jeu de dé</title>
+    <link rel="stylesheet" href="jeu-dé.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ranchers&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- ***section header *** -->
+
+    <header class="header">
+      <div class="wrapper">
+        <h1>Viens jouer à Dédé !!</h1>
+
+        <img src="icons8-dé-48.png" alt="dé" />
+        <img src="icons8-dé-48.png" alt="dé" />
+        <img src="icons8-dé-48.png" alt="dé" />
+        <img src="icons8-dé-48.png" alt="dé" />
+        <img src="icons8-dé-48.png" alt="dé" />
+        <img src="icons8-dé-48.png" alt="dé" />
+      </div>
+    </header>
+
+    <!-- ***section règles *** -->
+    <section class="contenu">
+      <section class="regle">
+        <div class="wrapper">
+          <div class="bgcolor">
+            <p>
+              Trouve le chiffre compris entre 1 et 6 <br />
+              Attention tu n'as que 3 tentatives !! <br />
+              Clique sur le dé pour commencer <br />
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ***section résultats *** -->
+
+      <form class="resultats">
+        <div class="wrapper">
+          <div class="bgcolor">
+            <input
+              type="number"
+              id="nbsaisie"
+              autofocus
+              placeholder="Saisis ton chiffre ici"
+              list="nombresdefauts"
+            />
+            <br />
+            <datalist id="nombresdefauts">
+              <option value="1"> </option>
+              <option value="2"> </option>
+              <option value="3"> </option>
+              <option value="4"> </option>
+              <option value="5"> </option>
+              <option value="6"> </option>
+            </datalist>
+
+            <input type="button" id="bouton-go" value="Valider" />
+          </div>
+        </div>
+      </form>
+
+      <!-- ***section résultats *** -->
+
+      <section class="resultat">
+        <div class="wrapper">
+          <div class="bgcolor">
+            <div id="total-propositions"></div>
+            <div id="total-resultats"></div>
+            <div id="justeprix"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ***section boutons *** -->
+
+      <form class="rejouer">
+        <div class="wrapper">
+          <div class="bgcolor">
+            <input
+              type="button"
+              id="bouton-rejouer"
+              class="bouton-rejouer"
+              onclick="document.location.reload()"
+              value="Rejouer"
+            />
+          </div>
+        </div>
+      </form>
+
+      <div class="merci">
+        <div class="wrapper">
+          
+        <h1>Merci d'avoir joué ! <br> <span class="span-fin">A Bientot !</span>  </h1>
+          
+        </div>
+      </div>
+
+    </section>
+
+    <script src="jeu-dé.js"></script>
+  </body>
+</html>
+
+<!--  -->

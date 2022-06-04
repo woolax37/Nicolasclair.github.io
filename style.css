@@ -1,0 +1,387 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Header : position fixe sur le header pour la nav collante + toggle pour menu burger*/
+
+header {
+  position: fixed;
+  width: 100%;
+  height: 80px;
+  padding: 0 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #009891;
+  z-index: 1000;
+  top: 0px;
+  transition: 0.4s;
+}
+.logo {
+  color: #fff;
+  font-size: 34px;
+  letter-spacing: 2px;
+  font-weight: 600;
+}
+.logo span {
+  color: #82df54;
+  font-size: 50px;
+  font-family: "Special Elite";
+}
+
+header ul {
+  position: relative;
+  display: flex;
+}
+
+header li {
+  list-style: none;
+  position: relative;
+}
+
+header ul li a {
+  position: relative;
+  padding: 5px 10px;
+  margin-right: 10px;
+  color: #fff;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.toggle {
+  display: none;
+}
+
+header ul li a::after {
+  position: absolute;
+  content: "";
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: #82df54;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.5s;
+}
+header ul li a:hover {
+  color: #cad4c5;
+}
+header ul li a:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+/* section dark mode/ligthmode*/
+
+.switch {
+  width: 90px;
+  height: 30px;
+  background-color: #1e2939;
+  border-radius: 15px;
+  position: relative;
+  border: 1px solid #1e2939;
+  padding: 1rem;
+}
+
+.switch i {
+  position: absolute;
+  color: yellow;
+  top: 6px;
+  right: 23px;
+}
+
+.btn {
+  width: 30px;
+  height: 33px;
+  border-radius: 50%;
+  background-color: white;
+  position: absolute;
+  top: -1px;
+  left: -1px;
+}
+
+/*modif toggle*/
+
+.btn-change {
+  right: -1px;
+  left: auto;
+}
+
+.icone-change {
+  left: 20px;
+}
+
+.switch-change {
+  background-color: rgba(255, 255, 255, 0.74);
+  border: 1px solid white;
+}
+
+.section-change {
+  background-color: #001312e0;
+  color: white;
+}
+
+.section-changetwo {
+  background-color: #024441 !important;
+}
+
+/* section dark mode/ligthmode*/
+
+/* section : section 1/2 bleu*/
+
+section {
+  text-align: left;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 100px;
+}
+
+section div {
+  width: 70%;
+}
+
+.formation,
+.contact {
+  background: #009891;
+  color: #fff;
+}
+
+section:nth-child(odd) {
+  background: #009891;
+  color: #fff;
+}
+
+section img {
+  max-width: 340px;
+  margin-left: 30px;
+  border-radius: 10%;
+}
+
+section p,
+section li {
+  font-size: 1.3em;
+}
+
+section h2 {
+  padding-bottom: 40px;
+  font-size: 2.5em;
+  text-transform: uppercase;
+}
+
+section ul {
+  padding-left: 17px;
+}
+
+/* section : style des boutons*/
+
+section a {
+  margin: 30px 0 0 0;
+}
+
+#projet a {
+  border: none;
+}
+
+#accueil .button:before {
+  background-color: #82df54;
+}
+
+#accueil .button:hover {
+  color: #fff;
+}
+
+#accueil .button:after {
+  color: #009891;
+  background-color: #009891;
+}
+
+.button {
+  display: inline-block;
+  padding: 0.75rem 1.25rem;
+  border-radius: 10rem;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1rem;
+  letter-spacing: 0.15rem;
+  transition: all 0.3s;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+.button:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #82df54;
+  border-radius: 10rem;
+  z-index: -2;
+}
+.button:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background-color: #fff;
+  transition: all 0.3s;
+  border-radius: 10rem;
+  z-index: -1;
+}
+.button:hover {
+  color: #009891;
+}
+.button:hover:before {
+  width: 100%;
+}
+
+/* contact  */
+#contact div {
+  max-width: 450px;
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  font-size: 18px;
+  text-align: center;
+  justify-content: center;
+}
+
+#contact a {
+  margin: 50px 0 0 0;
+}
+
+footer {
+  text-align: center;
+  background: #009891;
+  color: #fff;
+}
+
+/* media queries  */
+
+@media screen and (max-width: 1400px) {
+  section h2 {
+    font-size: 30px;
+  }
+
+  .logo {
+    font-size: 24px;
+    position: fixed;
+    left: 0;
+    margin-left: 30px;
+  }
+  section {
+    padding: 100px 20px 100px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  section img {
+    margin: 50px 0 0 0;
+    max-width: 50%;
+  }
+
+  section a {
+    margin: 50px 0 0 0;
+  }
+  section li {
+    text-align: left;
+  }
+
+  #home h2 {
+    padding-top: 50px;
+  }
+
+  /* .cefim {
+    max-width: 50%;
+  } */
+
+  header ul {
+    position: absolute;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: calc(100vh - 80px);
+    padding: 50px 100px;
+    text-align: center;
+    overflow: auto;
+    transition: 0.5s;
+    background: #009891;
+    flex-direction: column;
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+
+  header.active ul {
+    opacity: 1;
+    top: 80px;
+    transform: translateY(0);
+  }
+  header ul li a {
+    margin: 5px 0;
+    font-size: 24px;
+  }
+
+  /* menu burger et rotation du menu pour fusionner en croix au clic  pour version mobile  */
+
+  .toggle {
+    display: block;
+    position: absolute;
+    right: 0;
+    margin-right: 30px;
+
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+  }
+  .toggle::before {
+    content: "";
+    position: absolute;
+    top: 4px;
+    width: 100%;
+    height: 2px;
+    background: #fff;
+    z-index: 1;
+    box-shadow: 0 10px 0 #fff;
+    transition: 0.5s;
+  }
+  .toggle::after {
+    content: "";
+    position: absolute;
+    bottom: 4px;
+    width: 100%;
+    height: 2px;
+    background: #fff;
+    z-index: 1;
+    transition: 0.5s;
+  }
+  header.active .toggle::before {
+    top: 14px;
+    transform: rotate(45deg);
+    box-shadow: 0 0 0 #fff;
+  }
+  header.active .toggle::after {
+    bottom: 14px;
+    transform: rotate(-45deg);
+  }
+}
